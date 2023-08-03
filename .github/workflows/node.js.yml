@@ -29,6 +29,6 @@ jobs:
     - run: npm ci
     - run: |
             touch .env
-            echo "${{ sectets.PROD_ENV_FILE }}" > .env
+            echo "${{ secrets.PROD_ENV_FILE }}" > .env
     #- run: npm run build --if-present
     #- run: npm test
